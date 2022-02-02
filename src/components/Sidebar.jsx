@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { Nav, Tab, Button, Modal } from 'react-bootstrap';
 import Contacts from './Contacts';
 import Conversations from './Conversations';
-import NewContactModal from './NewContact';
-import NewConversationModal from './NewConversation';
+import NewContactModal from './NewContactModal';
+import NewConversationModal from './NewConversationModal';
 
 
 const CONVERSATIONS_KEY = 'conversations'
@@ -17,7 +17,6 @@ export default function Sidebar({ id }) {
 
 
     function closeModal() {
-        
         setModalOpen(false)
     }
 
